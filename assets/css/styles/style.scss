@@ -1,0 +1,487 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+// my css variables
+
+$primarycolor: rgba(34, 32, 32, 0.897);
+$secondarycolor: gold;
+$tertiarycolor: rgba(78, 72, 72, 0.815);
+$bg-grey: rgba(128, 128, 128, 0.137);
+$primarybdr: rgba(167, 162, 162, 0.555);
+$secondarybdr: rgba(59, 55, 55, 0.336);
+
+.my-mg{
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.my-btn {
+    padding: 5px 40px;
+    border: 3px solid black;
+    color: black;
+    background-color: transparent;
+}
+
+.nav-item {
+    .nav-link {
+        padding: 1rem !important;
+        color: #fff !important;
+    }
+}
+
+.hero {
+    .carousel-inner {
+        height: 89vh;
+        background-color: $bg-grey;
+        //    align-items: center;
+    }
+
+    .row {
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    .mt-50 {
+        margin-top: 13%;
+    }
+    .carousel-img img{
+         width: 75% !important;
+    }
+    .carousel-indicators  .active{
+        background-color: $secondarycolor;
+    }
+    .carousel-indicators li {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        opacity: 0.7;
+        background-color: black;
+    }
+    
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: no-repeat 50%/100% 100%;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 15%;
+        color: #fff;
+        text-align: center;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }
+    
+    .icon-previous-wrap {
+        width: 30px;
+        border: 2px solid $primarycolor ;
+        border-radius: 50%;
+    }
+    
+    .icon-next-wrap {
+        width: 30px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: $secondarycolor;
+    }
+    
+    .fa-icon {
+        font-size: 20px;
+        font-weight: 500;
+        // padding:0 10px;    
+    }
+    
+    .previous {
+        color: $primarycolor;
+    }
+    
+}
+
+
+
+.my-card {
+    background-color: #fff;
+    border: 2px solid $primarybdr ;
+}
+
+.section2 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    .big-icon i {
+        font-size: 46px;
+        margin-left: 1rem;
+    }
+
+    .mt- {
+        margin-top: -7px;
+    }
+
+}
+
+.section3 {
+    background-color: $bg-grey;
+
+    ul {
+        margin-bottom: .5rem !important;
+
+        .active {
+            color: $secondarycolor !important;
+        }
+    }
+
+    .category li {
+        justify-content: center;
+        padding: .5rem;
+        font-size: 17px;
+        font-weight: 500;
+        color: $tertiarycolor;
+    }
+    .carousel-indicators li {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        color: $secondarycolor !important;
+    }
+    
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: no-repeat 50%/100% 100%;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 15%;
+        color: #fff;
+        text-align: center;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }
+    
+    .icon-previous-wrap {
+        width: 30px;
+        border: 2px solid $primarycolor ;
+        border-radius: 50%;
+    }
+    
+    .icon-next-wrap {
+        width: 30px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: $secondarycolor;
+    }
+    
+    .fa-icon {
+        font-size: 20px;
+        font-weight: 500;
+        // padding:0 10px;    
+    }
+    
+    .previous {
+        color: $primarycolor;
+    }
+    
+}
+
+.card {
+    border-radius: .2rem !important;
+    border: 2px solid $secondarybdr ;
+    transition: 0.3s ease-out;
+
+    &:hover {
+        border: 2px solid black;
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.041) !important;
+    }
+}
+
+.section4 {
+    margin-top: 70px;
+
+    h2,
+    p {
+        padding-bottom: 1rem;
+    }
+}
+
+.section5 {
+    background-color: $bg-grey;
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    ul li {
+        font-weight: 700;
+        padding-top: 1rem;
+        color: $tertiarycolor;
+    }
+}
+
+.section6 {
+
+    .rating .fa-star {
+        color: rgb(235, 200, 2);
+        padding-right: .5rem;
+        padding-bottom: 1rem;
+        padding-top: .3rem;
+        font-size: 15px;
+
+
+        // padding-bottom: .7rem;
+
+    }
+    .carousel-indicators li {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        color: $secondarycolor !important;
+    }
+    
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: no-repeat 50%/100% 100%;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 15%;
+        color: #fff;
+        text-align: center;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }
+    
+    .icon-previous-wrap {
+        width: 30px;
+        border: 2px solid $primarycolor ;
+        border-radius: 50%;
+    }
+    
+    .icon-next-wrap {
+        width: 30px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: $secondarycolor;
+    }
+    
+    .fa-icon {
+        font-size: 20px;
+        font-weight: 500;
+        // padding:0 10px;    
+    }
+    .carousel-indicators  .active{
+        background-color: $secondarycolor;
+    }
+    .carousel-indicators li {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        opacity: 0.7;
+        background-color: black;
+    }
+    
+    .previous {
+        color: $primarycolor;
+    }
+
+    .testmonial-carousel-img-conatiner img {
+        width: 170px;
+        height: 170px;
+        background-color: aqua;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .testmonial-carousel-text p {
+        width: 70%;
+    }
+
+    .testmonial-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 21%;
+    }
+}
+
+.subscribe {
+    margin-top: 50px;
+    background-color: $bg-grey;
+    padding: 40px;
+
+    form input {
+        width: 400px;
+        height: 50px;
+        padding: 10px;
+        padding-left: 30px;
+        border-radius: 30px 0px 0px 30px;
+
+        background-color: transparent;
+
+    }
+
+    ::placeholder {
+        font-size: 16px
+    }
+
+    .form-wrap {
+        margin-left: 5.5rem;
+    }
+
+    form button {
+        padding: 5px;
+        width: 70px;
+        padding-right: 15px;
+        border-radius: 0px 30px 30px 0px;
+        background-color: transparent;
+
+        i {
+            font-size: 23px;
+            text-align: center;
+        }
+
+        &focus {
+            outline: none;
+        }
+    }
+}
+
+footer {
+    background-color: #216cbd;
+    color: white !important;
+
+    .footer-logo {
+        display: flex;
+        margin-left: 5rem;
+
+    }
+
+    .footer-logo img {
+        width: 70px;
+
+    }
+    .readmore{
+        color: $secondarycolor;
+        font-weight: 600;
+    }
+    ul , .text{
+        margin-top: .5rem;
+    }
+
+    .footer-text {
+        h4 {
+            font-size: 30px;
+            // word-spacing: 20px;
+            font-weight: 400;
+        }
+        p{
+            line-height: 1.5rem;
+            margin-bottom: .3rem;
+        }
+        p , li , a{
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .my-width {
+        width: 50px !important;
+    }
+
+    .quick-link,
+    .contact,
+    .visit {
+        margin-top: 6rem;
+    }
+
+    .quick-link {
+        ul{
+            margin-left: 2rem;
+        }
+        li {
+            color: $secondarycolor;
+            padding-bottom: 1rem ;
+        }
+
+
+        span {
+            color: white;
+        }
+        p{
+            line-height: .1rem !important;
+        }
+    }
+    .contact  {
+        li{
+            list-style-type: none;
+            p{
+               margin-bottom: none;
+              margin-bottom: 0.1rem;
+            }
+        }
+    }
+    .visit{
+        ul li{
+            list-style-type: none !important;
+            p{
+               margin-bottom: none;
+              margin-bottom: 0.1rem;
+            }
+        } 
+    }
+}
